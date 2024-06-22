@@ -35,7 +35,7 @@ _new_hashkey() {
   cxa_malloc(retval, 1, autoxs_hashkey);
   retval->next = NULL;
 
-  if (CXSAccessor_last_hashkey != NULL) { /* apend to list */
+  if (CXSAccessor_last_hashkey != NULL) { /* append to list */
     CXSAccessor_last_hashkey->next = retval;
   }
   else { /* init */
